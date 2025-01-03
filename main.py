@@ -7,3 +7,8 @@ with open("file1.txt", "r") as file:
 
 with open("file1.txt", "a") as file:
     file.write("\nNEW LINE!")
+
+
+with open("image.png", "rb") as image:
+    with open("image_copy.png", "wb") as copy:
+        copy.write(image.read())
